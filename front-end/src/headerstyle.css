@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins';
+}
+.h4-header{
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.btn-create{
+    background: linear-gradient(180deg, #A128FF 0%, #6100AD 113.79%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.filter-1{
+    border: none;
+    font-size: 16px;
+}
+.search{
+    color: #686868;
+}
+.font-color-filter{
+    color:#686868;
+}
+.range{
+    width: 100%;
+    background: #333;
+}
+.job-img{
+    width: 100%;
+}
+.time-job-btn{
+    background-color: #B0D9FF;
+    border: none;
+    border-radius: 10px;
+}
+.p-points{
+    color: #686868;
+    size: 10px;
+}
+.btn-apply{
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #00AAFF;
+    color: white;
+    padding: 12px 10px 12px 10px;
+}
+.modal-dialog{
+    
+    max-width: 60%;
+}
+.modal-header{
+    border-bottom:none;
+}
+.input-pop{
+    padding: 10px;
+}
+.input-pop:focus{
+    border-color: black;
+}
+.btn-draft{
+    background-color: rgb(250, 249, 249);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:black;
+
+}
+.btn-submit{
+
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
