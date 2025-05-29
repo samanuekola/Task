@@ -26,6 +26,13 @@ connectDB();
 
 app.use(express.json());
 app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 const jobSchema = new mongoose.Schema({
   jobtitle: { type: String, required: true, trim: true },
