@@ -25,14 +25,12 @@ const connectDB = async () => {
 connectDB();
 
 app.use(express.json());
-app.use(cors());
-app.use(cors(
-    {
-        origin: ["https://task-opal-seven.vercel.app/"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+
+app.use(cors({
+  origin: 'https://task-opal-seven.vercel.app',  // No trailing slash here
+  methods: ['GET', 'POST'],
+  credentials: true,
+}));
 
 const jobSchema = new mongoose.Schema({
   jobtitle: { type: String, required: true, trim: true },
@@ -74,9 +72,6 @@ app.get('/', async (req, res) => {
   }
 });
 
-
 app.listen(port, () => {
   console.log(`Backend server running on http://localhost:${port}`);
 });
-
-
