@@ -27,7 +27,7 @@ function App() {
   const [salaryRangeFilter, setSalaryRangeFilter] = useState(0);
 
   const API_URL = 'https://task-api-lime.vercel.app/';
-
+  axios.defaults.withCredentials=true;
   const handleShow = () => setShowModal(true);
   const handleClose = () => {
     setErrors({});
