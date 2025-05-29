@@ -10,5 +10,5 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Cyberminds/', // Replace with your repository name
+  base: '/', // Replace with your repository name
 })
