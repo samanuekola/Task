@@ -6,6 +6,9 @@
     font-size: 16px;
     font-family: 'Poppins';
 }
+.header-shadow{
+    box-shadow: 0 0 20px 0 #7F7F7F26;
+}
 .btn-create{
     background: linear-gradient(180deg, #A128FF 0%, #6100AD 113.79%);
     color: white;

@@ -3,11 +3,11 @@ import jobimage1 from '../images/image 77.png';
 
 const Jobs = ({ jobs, setJobs }) => {
   return (
-    <div className='container-fluid my-5 '>
+    <div className='container-fluid my-5 px-4'>
       <div className='row p-2 g-4'>
         {jobs.map((job, index) => (
-          <div className='col-3 p-3  shadow-sm' key={index}>
-            <div className='p-3 rounded job-card '> 
+          <div className='col-3 job-card  shadow-sm' key={index}>
+            <div className='p-3 rounded  '> 
               <div className='d-flex justify-content-between'>
                 <div>
                   <img src={jobimage1} className='job-img' alt="Job" />
@@ -21,15 +21,15 @@ const Jobs = ({ jobs, setJobs }) => {
               </div>
               <div className='d-flex justify-content-between'>
                 <div>
-                  <i className="bi bi-person-plus search font1-job"></i>
+                  <i className="bi bi-person-plus search font1-job px-1"></i>
                   <p className='d-inline search font1-job'>{job.exp}</p>
                 </div>
                 <div>
-                  <i className="bi bi-buildings search font1-job"></i>
+                  <i className="bi bi-buildings search font1-job px-1"></i>
                   <p className='d-inline search font1-job'>Onsite</p>
                 </div>
                 <div>
-                  <i className="bi bi-layers search font1-job"></i>
+                  <i className="bi bi-layers search font1-job px-1"></i>
                   <p className='d-inline search font1-job'>{job.package}</p>
                 </div>
               </div>

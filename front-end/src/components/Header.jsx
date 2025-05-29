@@ -2,10 +2,10 @@ import React from 'react';
 import image1 from '../images/Frame 54.png'
 const Header = ({ onCreateJobClick }) => {
   return (
-    <div className='container-fluid py-2'>
-        <div className='row'>
+    <div className='container-fluid py-2 '>
+        <div className='row '>
             <div className='col-2'></div>
-            <div className='col-8 d-flex align-items-center justify-content-between p-3 border rounded-pill '>
+            <div className='col-8 d-flex align-items-center justify-content-between p-3 border rounded-pill header-shadow'>
                     <img src={image1} className='image-fluid'/>
                     <h6 className="h4-header" >Home</h6 >
                     <h6 className="h4-header">Find Jobs</h6>

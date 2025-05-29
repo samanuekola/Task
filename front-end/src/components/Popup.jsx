@@ -39,13 +39,17 @@ const Popup = ({
         <div className='row my-3'>
           <div className='col'>
             <label>Location</label>
-            <input type='text' className='form-control border input-pop' placeholder='Choose Preferred Location'
-              onChange={(e) => setNewLocation(e.target.value)} />
+            <select className="form-select border input-pop custom-select" onChange={(e) => setNewLocation(e.target.value)}>
+              <option value="">Select</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Banglore">Banglore</option>
+            </select>
             {errors.location && <small className="text-danger">{errors.location}</small>}
           </div>
           <div className='col'>
             <label>Job Type</label>
-            <select className="form-select border input-pop" onChange={(e) => setJobType(e.target.value)}>
+            <select className="form-select border input-pop custom-select" onChange={(e) => setJobType(e.target.value)}>
               <option value="">Select</option>
               <option value="FullTime">FullTime</option>
               <option value="PartTime">PartTime</option>
@@ -86,10 +90,10 @@ const Popup = ({
 
       <Modal.Footer className='justify-content-between'>
         <Button variant="secondary" onClick={handleClose} className='btn-draft'>
-          Save Draft
+          Save Draft <i class="bi bi-chevron-double-down"></i>
         </Button>
         <Button variant="primary" onClick={handlePublish} className='btn-submit'>
-          Publish
+          Publish <i class="bi bi-chevron-double-right"></i>
         </Button>
       </Modal.Footer>
     </Modal>

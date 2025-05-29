@@ -11,10 +11,10 @@ const Filter = ({
   setSalaryRangeFilter
 }) => {
   return (
-    <div className='container-fluid filter-div my-3'>
+    <div className='container-fluid filter-div my-3 py-3 px-4'>
       <div className='row'>
 
-        <div className='col-3 d-flex align-items-center'>
+        <div className='col-3 d-flex align-items-center bl-1'>
           <i className="bi bi-search search me-2"></i>
           <input
             type='text'
@@ -25,27 +25,32 @@ const Filter = ({
           />
         </div>
 
-        <div className='col-3 d-flex align-items-center position-relative'>
+        <div className='col-3 d-flex align-items-center position-relative bl-1'>
           <i className="bi bi-geo-alt search me-2"></i>
-          <input
+          {/* <input
             type='text'
             placeholder='Preferred Location'
             className='filter-1 flex-grow-1 px-3'
             value={locationFilter}
             onChange={(e) => setLocationFilter(e.target.value)}
-          />
-          <i className="bi bi-chevron-compact-down position-absolute end-0 pe-3"></i>
+          /> */}
+          <select className="form-select border-0 input-pop custom-select2" onChange={(e) => setLocationFilter(e.target.value)}>
+              <option value="">Preferred Location</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Banglore">Banglore</option>
+          </select>
+          
         </div>
 
-        <div className='col-3 d-flex align-items-center font-color-filter'>
+        <div className='col-3 d-flex align-items-center font-color-filter bl-1'>
           <i className="bi bi-person search me-2"></i>
-          <label className="me-auto">Job type</label>
           <select
-            className="form-select w-auto border-0 ms-2"
+            className="form-select border-0 input-pop custom-select2"
             value={jobTypeFilter}
             onChange={(e) => setJobTypeFilter(e.target.value)}
           >
-            <option value=""></option>
+            <option value="">Job type</option>
             <option value="FullTime">FullTime</option>
             <option value="PartTime">PartTime</option>
             <option value="Contract">Contract</option>
