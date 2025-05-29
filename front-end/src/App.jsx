@@ -26,7 +26,7 @@ function App() {
   const [jobTypeFilter, setJobTypeFilter] = useState('');
   const [salaryRangeFilter, setSalaryRangeFilter] = useState(0);
 
-  const API_URL = 'http://localhost:3201/';
+  const API_URL = 'https://task-api-lime.vercel.app/';
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => {
