@@ -27,7 +27,7 @@ connectDB();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://task-opal-seven.vercel.app',  // No trailing slash here
+  origin: 'https://capsitech-task5-backend.vercel.app/',  
   methods: ['GET', 'POST'],
   credentials: true,
 }));
